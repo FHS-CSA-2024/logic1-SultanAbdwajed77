@@ -86,7 +86,7 @@ public class Logic1
    old35(3) --> true  
    old35(10) --> true  
    old35(15) --> false */  
-   public boolean old35(int n) {  
+   public boolean old35(int n){  
       return (n % 3 == 0 && n % 5 != 0) || (n % 3 != 0 && n % 5 == 0);  
    }  
   
@@ -97,8 +97,8 @@ public class Logic1
    specialEleven(22) --> true  
    specialEleven(23) --> true  
    specialEleven(24) --> false */  
-   public boolean specialEleven(int n) {  
-      return n % 11 == 0 || n % 11 == 1;  
+   public boolean specialEleven(int n){  
+      return (n % 11 == 0 || n % 11 == 1);  
    }  
   
    /*Return true if the given non-negative number is 1 or 2 more than a multiple of 20.  
@@ -106,8 +106,8 @@ public class Logic1
    more20(20) --> false  
    more20(21) --> true  
    more20(42) --> true */  
-   public boolean more20(int n) {  
-      return n % 20 == 1 || n % 20 == 2;  
+   public boolean more20(int n){  
+      return (n % 20 == 1 || n % 20 == 2);  
    }  
   
    /*Return true if the given non-negative number is 1 or 2 less than a multiple of 20.  
@@ -117,8 +117,8 @@ public class Logic1
    less20(18) --> true  
    less20(59) --> true  
    less20(20) --> false */  
-   public boolean less20(int n) {  
-      return n % 20 == 18 || n % 20 == 19;  
+   public boolean less20(int n){  
+      return (n % 20 == 18 || n % 20 == 19);  
    }  
   
    /*Given a non-negative number "num", return true if num is within 2 of a multiple of 10.  
@@ -128,8 +128,8 @@ public class Logic1
    nearTen(12) --> true  
    nearTen(17) --> false  
    nearTen(19) --> true */  
-   public boolean nearTen(int num) {  
-      return num % 10 <= 2 || num % 10 >= 8;  
+   public boolean nearTen(int num){  
+      return (num % 10 <= 2 || num % 10 >= 8);  
    }  
   
    /*Given 2 ints, a and b, return their sum.  
@@ -140,8 +140,9 @@ public class Logic1
    sortaSum(3, 4) --> 7  
    sortaSum(9, 4) --> 20  
    sortaSum(10, 11) --> 21*/  
-   public int sortaSum(int a, int b) {  
-      int sum = a + b;  
+   public int sortaSum(int a, int b){  
+      int sum = a + b;
+
       return (sum >= 10 && sum <= 19) ? 20 : sum;  
    }  
   
